@@ -1,0 +1,20 @@
+[package]
+authors = ['Narrowlink <opensource@narrowlink.com>']
+description = "Resumable IO for Rust"
+name = "resumable-io"
+version = "0.0.1"
+edition = "2021"
+license = "Apache-2.0"
+repository = 'https://github.com/narrowlink/resumable-io'
+homepage = "https://narrowlink.com/"
+readme = 'README.md'
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.37", features = [
+    "sync",
+    "time",
+], default-features = false }
+futures = { version = "0.3", default-features = false }
+thiserror = { version = "1.0", default-features = false }
